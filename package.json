@@ -1,0 +1,16 @@
+{
+  "name": "research_project",
+  "version": "1.0.0",
+  "description": "a research paper uploading buying and selling backend ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "research",
+    "project",
+    "backend"
+  ],
+  "author": "ananya",
+  "license": "ISC"
+}
