@@ -7,6 +7,7 @@ else
 	exit 1
 fi
 
+
 git status
 
 echo "If you want to add all the files enter . else enter the file path"
@@ -36,6 +37,9 @@ read branchName
 git branch -m "$branchName"
 
 git push -u origin "$branchName"
+
+Username for 'https://github.com': "$GITHUB_USERNAME"
+Password for 'https://github.com': "$GITHUB_PASSWORD"
 
 
 
