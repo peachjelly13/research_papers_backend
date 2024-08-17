@@ -36,10 +36,10 @@ read branchName
 
 git branch -m "$branchName"
 
+git remote set-url origin https://$GITHUB_USERNAME:$GITHUB_PASSWORD@github.com/$GITHUB_USERNAME/research_papers_backend.git
 git push -u origin "$branchName"
 
-Username for 'https://github.com': "$GITHUB_USERNAME"
-Password for 'https://github.com': "$GITHUB_PASSWORD"
+
 
 
 
