@@ -2,9 +2,10 @@
   "name": "research_project",
   "version": "1.0.0",
   "description": "a research paper uploading buying and selling backend ",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev" : "nodemon src/index.js"
   },
   "keywords": [
     "research",
@@ -12,5 +13,8 @@
     "backend"
   ],
   "author": "ananya",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
 }
