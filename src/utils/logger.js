@@ -10,7 +10,7 @@ const consoleLogFormat = format.combine(
     })
 );
 
-const logger = new createLogger({
+export const logger = new createLogger({
     level:"info",
     format:combine(
         colorize(),
@@ -20,7 +20,7 @@ const logger = new createLogger({
     transports: [
         new transports.File({
              level: 'info',
-             dirname: 'logs',
+             dirname: 'src/utils/logs',
              json: true,
              handleExceptions: true,
              filename: `combined.log`
