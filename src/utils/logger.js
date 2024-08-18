@@ -12,7 +12,11 @@ const consoleLogFormat = format.combine(
 
 const logger = new createLogger({
     level:"info",
-    format:combine(consoleLogFormat),
+    format:combine(
+        colorize(),
+        timestamp(),
+        json()
+    ),
     transports: [
         new transports.File({
              level: 'info',
@@ -20,6 +24,10 @@ const logger = new createLogger({
              json: true,
              handleExceptions: true,
              filename: `combined.log`
-         })
+         }),
+         new transports.Console({format:consoleLogFormat})
      ], exitOnError: false
 });
+
+
+export default logger;
