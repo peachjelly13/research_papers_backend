@@ -6,7 +6,7 @@ const {combine,timestamp,json,colorize} = format;
 const consoleLogFormat = format.combine(
     format.colorize(),
     format.printf(({level,message,timestamp})=>{
-        return `${level}:${timestamp}`
+        return `${level}: ${timestamp} - ${message}`;
     })
 );
 
